@@ -1,0 +1,22 @@
+version: '3.4'
+
+services:
+  projectfour:
+    image: ${DOCKER_REGISTRY-}projectfour
+    build:
+      context: .
+      dockerfile: ProjectFour/Dockerfile
+
+  projectone:
+    image: ${DOCKER_REGISTRY-}projectone
+    build:
+      context: .
+      dockerfile: ProjectOne/Dockerfile
+
+
+  projectthreee:
+    image: ${DOCKER_REGISTRY-}projectthreee
+    build:
+      context: .
+      dockerfile: ProjectThreee/Dockerfile
+
